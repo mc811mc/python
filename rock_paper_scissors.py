@@ -9,6 +9,9 @@ com_sel = computer[com_num]
 player = input('Rock, paper, scissors GO! ')
 player = player.lower()
 
+if 'rock' or 'paper' or 'scissors' not in player:
+    print("That is not how you play rock, paper, scissors!")
+
 if player == 'rock' or 'paper' or 'scissors':    
     #win
     if player == 'rock' and com_sel == 'scissors':
@@ -28,6 +31,4 @@ if player == 'rock' or 'paper' or 'scissors':
     if player == 'paper' and com_sel == 'scissors':
         print('You lose.', com_sel.title(), "beats", player, '!', sep = '')
     if player == 'scissors' and com_sel == 'rock':
-        print('You lose.', com_sel.title(), "beats", player, '!', ssep = '')
-else:
-    print("That is not how you play rock, paper, scissors!")
+        print('You lose.', com_sel.title(), "beats", player, '!', sep = '')
