@@ -4,8 +4,6 @@ computer = ['rock', 'paper', 'scissors']
 
 com_sel = random.choice(computer)
 
-print(com_sel)
-
 player = input('Rock, paper, scissors GO! ')
 player = player.lower()
 
